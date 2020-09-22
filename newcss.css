@@ -1,0 +1,101 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020年9月22日, 下午4:44:20
+    Author     : hazelqiu
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #ffa500;
+    color: white;
+   
+}
+
+.navbar {
+    display: flex;
+    background-color: #333;
+    
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    
+}
+
+.row {
+    display:flex;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+   
+    
+}
+
+.main {
+    
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {
+        
+        flex-direction: column;
+    }
+    
+}
+@media print {
+    .main {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
