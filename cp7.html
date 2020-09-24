@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" href="newcss.css">
+    <div class="header">
+        <h1>My CityU website</h1>
+        <p>With a felixible reponsive layout</p>
+    </div>
+
+    <div class="navbar">
+        <a id="felix">Foto1</a>
+        <a id="felix1">Foto2</a>
+        <a >3</a>
+        <a >4</a>
+
+    </div>
+ <!href="https://live.staticflickr.com/1728/42736240511_91cd425b59_c_d.jpg"
+ /*href="https://live.staticflickr.com/1945/45582150001_7bda8a2ee0_c_d.jpg"*->
+    <aside>
+        <h2>about me</h2>
+        <h5>photo of me</h5>
+        <div class="fakeimg" style="height:60px;">Image</div>
+        <p>sdfasfasdfadsf</p>
+        <h3>dgad</h3>
+        <p>dsagsdgdfsgf</p>
+        <div class="fakeimg" style="height:60px;">Image</div><br>
+        <div class="fakeimg" style="height:60px;">Image</div><br>
+        <div class="fakeimg" style="height:60px;">Image</div>
+
+    </aside>
+
+
+    <div class="row"></div>
+
+    <div class="main">
+        <div class="section">
+            <h2>about me</h2>
+            <h5>photo of me</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>asdfadsfas</p><p>asdfadsfas</p>
+        </div>
+        <br>
+        <div class="section">
+            <h2>about me</h2>
+            <h5>photo of me</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>asdfadsfas</p><p>asdfadsfas</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <h2>adsfasd</h2>
+    </footer>
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            
+
+        </div>
+        <div class="modal-content">
+         
+            <div class="modal-header">
+                <a id="jay1"><img id="jay" src="ss"></a>
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+                
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+                var modal = document.getElementById("myModal");
+
+                
+                var btn = document.getElementById("felix");
+                var btnn = document.getElementById("felix1");
+                
+                
+                
+            
+                var imgss = document.getElementById("jay");
+
+                var span = document.getElementsByClassName("close")[0];
+                
+                
+
+                
+                btn.onclick = function () {
+                    imgss.src = 'https://live.staticflickr.com/1728/42736240511_91cd425b59_c_d.jpg';
+                    modal.style.display = "block";
+                    
+                }      
+                btnn.onclick = function () {
+                    imgss.src = 'https://live.staticflickr.com/1945/45582150001_7bda8a2ee0_c_d.jpg';
+                    modal.style.display = "block";
+                    
+                }      
+            
+            
+
+                
+
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+
+
+</html>
